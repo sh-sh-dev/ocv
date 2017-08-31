@@ -1,0 +1,6 @@
+Options -Indexes
+#DirectoryIndex Map.php
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.*)$  Map.php?uri=$1    [L,NC,QSA]
